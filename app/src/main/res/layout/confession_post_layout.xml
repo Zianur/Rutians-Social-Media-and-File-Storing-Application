@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/allpost_border"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    >
+
+
+                        <TextView
+                            android:id="@+id/confessionpost_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp"
+                            android:text="Fake email id" />
+
+                        <TextView
+                            android:id="@+id/confessionpost_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="13sp"
+                            android:text="Fake email id" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/confessionpost_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dscription"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="3dp"
+                    android:textColor="@android:color/black"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:autoLink="all"/>
+
+
+
+                <ImageView
+                    android:id="@+id/confessionpost_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="3dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+</RelativeLayout>

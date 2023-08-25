@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".AddFileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <include
+                android:id="@+id/chotha_add_file_home_bar"
+                layout="@layout/app_bar_layout" />
+
+            <EditText
+                android:id="@+id/editTextFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chotha_add_file_home_bar"
+                android:padding="13dp"
+                android:hint="Enter a name for your file"
+                android:textColorHint="#5464BF"
+                android:background="@drawable/inputs"
+                android:layout_marginTop="100dp"
+                />
+
+            <Button
+                android:id="@+id/buttonselectFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextFileName"
+                android:background="@drawable/button"
+                android:text="Select PDF"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/buttonUploadFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonselectFile"
+                android:background="@drawable/button"
+                android:text="Upload PDF"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

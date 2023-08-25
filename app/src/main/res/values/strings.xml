@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Ruetian</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="set_up">You must fill up these correctly including profile picture now
+        or else you will be considered as an outsider
+        \nand the app will crush when you try to do an activity</string>
+
+    <string name="about_developer">
+        Hi, I am Zianur Rahman Joy, Department of Computer Science and Engineering, 17 Series, RUET.
+        \nThe basic idea of this app was part of my project in 2nd year odd semester under Bayezid Islam Sir, Lecturer, Department
+        of Computer Science and Engineering, RUET.\nBayezid Sir really helped me to build my basic by guiding me properly
+        thoroughout that project period and i am very grateful to him for that.\nAfter that i kept on working on it.
+        While passing through a lot of change in idea the app turned into this. \nI was supported mentally by many well wisher
+        while making this app. I am grateful to them also.
+        \nThe idea behind this app was to help all Ruetian. I hope everyone will enjoy operating this app.
+        \n\nThank You.
+    </string>
+
+    <string name="forgot_password">
+        We will send you an Email to let you change your password
+    </string>
+
+</resources>

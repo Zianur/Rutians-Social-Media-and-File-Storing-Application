@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".ChothaActivity">
+
+    <include
+        android:id="@+id/chotha_home_bar"
+        layout="@layout/app_bar_layout" />
+
+    <ImageButton
+        android:id="@+id/chotha_upper_add_post_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_box"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"
+        android:baselineAlignBottom="false"
+        >
+
+    </ImageButton>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_text_view"
+        android:layout_below="@+id/chotha_home_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Search Books and Chotha here"
+        android:textColorHint="#5464BF"
+        android:backgroundTint="#C52CDF"
+        android:padding="10dp"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/auto_complete_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/email"
+                android:hint="Enter your active Email "
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:layout_marginTop="100dp"
+                android:textColorHint="#5464BF"
+                android:drawableStart="@drawable/email" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/signup_email"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/password"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColorHint="#5464BF"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/signup_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/signup_password"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/password"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="#5464BF"
+                android:padding="8dp"
+                android:drawableStart="@drawable/password" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_confirmpassword"
+                android:background="@drawable/button"
+                android:layout_marginTop="50dp"
+                android:padding="17dp"
+                android:text="Create Account"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

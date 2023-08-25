@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".EditProfile">
+
+    <include
+        android:id="@+id/edit_profile_home_bar"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_below="@+id/edit_profile_home_bar"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_profile_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile" />
+
+
+            <EditText
+                android:id="@+id/edit_profile_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_profile_image"
+                android:background="@drawable/inputs"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:textColorHint="#5464BF"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_profile_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_profile_phone_number"
+                android:background="@drawable/inputs"
+                android:layout_marginTop="10dp"
+                android:hint="About you"
+                android:padding="30dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="#5464BF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/update_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/edit_profile_about"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:text="Update profile"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="17dp"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

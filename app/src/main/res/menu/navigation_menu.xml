@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/meme_home"
+        android:title="MEME Hub"
+        android:icon="@drawable/trollface">
+
+    </item>
+
+    <item
+        android:id="@+id/confession_home"
+        android:title="Confession"
+        android:icon="@drawable/favorite">
+
+    </item>
+
+    <item
+        android:id="@+id/chotha"
+        android:title="Chotha and Books"
+        android:icon="@drawable/books">
+
+    </item>
+
+
+    <item
+        android:id="@+id/ruet_website"
+        android:title="RUET Website"
+        android:icon="@drawable/website">
+
+    </item>
+
+    <item
+        android:id="@+id/ruetians_website"
+        android:title="Ruetians Website"
+        android:icon="@drawable/website">
+
+    </item>
+
+    <item
+        android:id="@+id/search_profile"
+        android:title="Search People"
+        android:icon="@drawable/find_people">
+
+    </item>
+
+    <item
+        android:id="@+id/station"
+        android:title="Help / Report"
+        android:icon="@drawable/gethelp">
+
+    </item>
+
+    <item
+        android:id="@+id/edit_profile"
+        android:title="Edit Profile"
+        android:icon="@drawable/settings">
+
+    </item>
+
+    <item
+        android:id="@+id/about_developer"
+        android:title="About Developer"
+        android:icon="@drawable/person">
+
+    </item>
+
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out"
+        android:icon="@drawable/logout">
+
+    </item>
+
+</menu>

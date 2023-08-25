@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".SearchActivity">
+
+    <include
+        android:id="@+id/search_home_bar"
+        layout="@layout/app_bar_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/search_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/search_home_bar"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/search_box_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#5464BF"
+            android:background="@drawable/inputs"
+            android:hint="Enter a valid full name"
+            />
+
+        <ImageButton
+            android:layout_weight=".5"
+            android:id="@+id/search_image_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/search"
+            android:scaleType="centerCrop"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_box_layout"
+        />
+
+</RelativeLayout>

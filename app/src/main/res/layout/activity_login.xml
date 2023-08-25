@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".LoginActivity">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <EditText
+               android:id="@+id/login_email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/inputs"
+               android:drawableLeft="@drawable/email"
+               android:layout_marginTop="100dp"
+               android:hint="Enter your Email "
+               android:textColorHint="#5464BF"
+               android:inputType="textEmailAddress"
+               android:padding="8dp"
+               android:drawableStart="@drawable/email" />
+
+           <EditText
+               android:id="@+id/login_password"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/login_email"
+               android:background="@drawable/inputs"
+               android:drawableLeft="@drawable/password"
+               android:layout_marginTop="20dp"
+               android:hint="Enter Password"
+               android:textColorHint="#5464BF"
+               android:inputType="textPassword"
+               android:padding="8dp"
+               android:drawableStart="@drawable/password" />
+
+           <Button
+               android:id="@+id/login_button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="50dp"
+               android:layout_below="@+id/login_password"
+               android:background="@drawable/button"
+               android:padding="17dp"
+               android:text="Log in"
+               android:textAllCaps="true"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/login_textview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/login_button"
+               android:layout_marginTop="30dp"
+               android:padding="10dp"
+               android:text="Sign Up"
+               android:gravity="center"
+               android:textColor="#5464BF"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </TextView>
+
+           <TextView
+               android:id="@+id/forgot_textview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/login_textview"
+               android:layout_marginTop="20dp"
+               android:padding="10dp"
+               android:text="Forgot password?"
+               android:gravity="center"
+               android:textColor="#5464BF"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </TextView>
+
+
+           <TextView
+               android:id="@+id/get_help_textview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/forgot_textview"
+               android:layout_marginTop="40dp"
+               android:padding="10dp"
+               android:text="Help / Report"
+               android:gravity="center"
+               android:textColor="#5464BF"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:layout_marginBottom="10dp"
+               >
+
+
+           </TextView>
+
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

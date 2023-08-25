@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "828780893408",
+    "firebase_url": "https://ruetians.firebaseio.com",
+    "project_id": "ruetians",
+    "storage_bucket": "ruetians.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828780893408:android:4a622c3c05e6086227ec85",
+        "android_client_info": {
+          "package_name": "com.ruet.ruetians"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828780893408-ar19klfueanencabajkfiuhtccvl04ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNQJX6DN9kk4UgeYhWZdZVIuiMkJ3d2w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828780893408-ar19klfueanencabajkfiuhtccvl04ro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

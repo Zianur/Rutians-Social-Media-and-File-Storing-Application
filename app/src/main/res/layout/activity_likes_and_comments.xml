@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".LikesAndComments">
+
+    <include
+        android:id="@+id/likes_comments_home_bar"
+        layout="@layout/app_bar_layout" />
+
+    <LinearLayout
+        android:id="@+id/likes_comments_linear_layout"
+        android:layout_below="@+id/likes_comments_home_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageButton
+
+            android:id="@+id/like_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/like_white"
+           android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/liked_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0 liked"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp" />
+
+
+        <ImageButton
+            android:id="@+id/dislike_image_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/unlike_white"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="50dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/disliked_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0 disliked"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/likes_comments_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/likes_comments_linear_layout"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/comment_box_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#5464BF"
+            android:background="@drawable/inputs"
+            android:hint="Comment here"
+            />
+
+        <ImageButton
+            android:layout_weight="0.5"
+            android:id="@+id/comment_image_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/send"
+            android:scaleType="centerCrop"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comments_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likes_comments_relative_layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/comments"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Comments"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/confession_commentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comments_linear_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_weight="6"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ruetian" />
+
+
+        <ProgressBar
+            android:layout_weight="1"
+            android:id="@+id/simpleProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:progressTint="#83ED19"
+            android:progressBackgroundTint="#85089A"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome dear ruetian"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="#50C108"
+            android:textSize="15dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

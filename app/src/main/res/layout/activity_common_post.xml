@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".CommonPostActivity">
+
+    <include
+        android:id="@+id/common_room_home_bar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_room_home_bar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/common_room_image_select_button"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/select_image" />
+
+            <EditText
+                android:id="@+id/common_room_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/common_room_image_select_button"
+                android:background="@drawable/inputs"
+                android:hint="Write something"
+                android:inputType="textMultiLine"
+                android:textColorHint="#5464BF"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/post_common_room_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/common_room_description"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:text="Post"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

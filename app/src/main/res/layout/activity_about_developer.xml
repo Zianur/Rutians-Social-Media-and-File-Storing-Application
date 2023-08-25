@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".AboutDeveloperActivity">
+
+    <include
+        android:id="@+id/about_developer_home_bar"
+        layout="@layout/app_bar_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/about_developer_home_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/developer_pic"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/developer_pic"
+                android:layout_margin="20dp"
+                >
+            </ImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/developer_pic"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_developer"
+                    android:textSize="20sp"
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Contact"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#5464BF"
+                    android:textSize="30sp"
+                    android:textAllCaps="true"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email -"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#0E0E0E"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mdzianurjoy@gmail.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:textIsSelectable="true"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile -"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#0E0E0E"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01673461416"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:textIsSelectable="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/about_developer_call_button"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:src="@drawable/call"
+                        android:scaleType="centerCrop">
+
+                    </ImageView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

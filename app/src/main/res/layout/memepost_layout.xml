@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allpost_border"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/memepost_profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile"
+                android:layout_marginLeft="4dp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/memepost_user_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="8dp"
+                   android:gravity="start"
+                   android:text="User Name"
+                   android:textAlignment="textStart"
+                   android:textColor="@android:color/black"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/memepost_user_email"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="13sp"
+                   android:text="Fake email id"
+                   android:textStyle="bold"
+                   android:textIsSelectable="true"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="5dp"
+                   android:padding="2dp">
+
+
+
+                   <TextView
+                       android:id="@+id/memepost_date"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/black"
+                       android:textSize="13sp"
+                       android:text="Fake email id" />
+
+                   <TextView
+                       android:id="@+id/memepost_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5dp"
+                       android:textColor="@android:color/black"
+                       android:textSize="13sp"
+                       android:text="Fake email id" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/memepost_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textColorHighlight="#97DFEA"
+            android:textColorLink="@color/colorPrimary"
+            android:autoLink="all"/>
+
+        <ImageView
+            android:id="@+id/memepost_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".ConfessionActivity">
+
+    <include
+        android:id="@+id/confession_home_bar"
+        layout="@layout/app_bar_layout" />
+
+
+    <ImageButton
+        android:id="@+id/confession_upper_add_post_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_pic_high"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"
+        android:baselineAlignBottom="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/confession_maincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/confession_home_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/confession_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
